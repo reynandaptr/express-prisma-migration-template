@@ -12,7 +12,8 @@
   "author": "Reynanda Putra Pratama <reynandapp1997@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "prisma": "^4.13.0"
+    "prisma": "^4.13.0",
+    "prisma-docs-generator": "^0.7.0"
   },
   "dependencies": {
     "@prisma/client": "4.13.0"
