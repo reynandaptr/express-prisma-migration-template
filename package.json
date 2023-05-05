@@ -1,5 +1,5 @@
 {
-  "name": "express-prisma-migration-template",
+  "name": "@reynandaptr/express-prisma-migration",
   "version": "1.0.0",
   "description": "",
   "scripts": {

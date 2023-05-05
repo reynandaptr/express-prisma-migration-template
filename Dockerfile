@@ -1,4 +1,4 @@
-FROM reynandaptr/node-builder:v0.0.1
+FROM reynandaptr/node-builder:v0.0.2
 
 COPY . .
 
