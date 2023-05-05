@@ -1,4 +1,4 @@
-FROM node:18.12.0-alpine
+FROM reynandaptr/node-builder:v0.0.1
 
 COPY . .
 
