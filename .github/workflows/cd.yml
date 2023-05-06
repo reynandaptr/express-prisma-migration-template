@@ -20,3 +20,7 @@ jobs:
       - run: pnpm migrate:apply:production
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL_PRODUCTION }}
+      - run: |
+          echo ${{ secrets.PAT }} | docker login ghcr.io --username ${{ vars.PROJECT_GROUP}} --password-stdin
+          docker buildx create --name multi-arch --bootstrap --use
+          docker buildx build --push --platform linux/arm64,linux/amd64 --tag ghcr.io/${{ vars.PROJECT_GROUP}}/${{ vars.PROJECT_NAME}}-migration:latest .
